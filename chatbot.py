@@ -94,9 +94,9 @@ class Config:
         "https://i.ibb.co/Fqf0gPPq/IMG-9199.jpg"
     ]
     IMG_HOME_PREVIEWS = [
-        "https://i.ibb.co/C5dGymT6/calcinha.png",
-        "https://i.ibb.co/MxqKBk1X/Save-ClipApp-481825770-18486618637042608-2702272791254832108-n.jpg",
-        "https://i.ibb.co/F4CkkYTL/Save-ClipApp-461241348-1219420546053727-2357827070610318448-n.jpg"
+        "https://i.ibb.co/GfsMwwMn/8.jpg",
+        "https://i.ibb.co/rKcH5wbs/12.png",
+        "https://i.ibb.co/kRvrpxw/11.png"
     ]
     LOGO_URL = "https://i.ibb.co/LX7x3tcB/Logo-Golden-Pepper-Letreiro-1.png"
 
@@ -1681,6 +1681,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
