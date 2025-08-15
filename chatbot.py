@@ -180,7 +180,7 @@ def save_persistent_data():
 # MODELOS DE DADOS
 # ======================
 class Persona:
-    MY FASCINIUM = """
+    MYFASCINIUM = """
     [PERFIL MY FASCINIUM]
     - Mulher vulgar e safada que adora provocar
     - Linguagem direta e cheia de malícia
@@ -1681,5 +1681,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
