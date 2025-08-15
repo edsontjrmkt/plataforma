@@ -76,14 +76,16 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 class Config:
     API_KEY = "AIzaSyDTaYm2KHHnVPdWy4l5pEaGPM7QR0g3IPc"
     API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
-    VIP_LINK = "https://t.me/+0C-j_2R0NrM3NmFh"
-    CHECKOUT_START = "https://pay.risepay.com.br/Pay/3cd8ce7e575e4f57ad428b5b5a61be93"
-    CHECKOUT_PREMIUM = "https://pay.risepay.com.br/Pay/508dcac47980406faa7797e05118c068"
-    CHECKOUT_EXTREME = "https://pay.risepay.com.br/Pay/b69f7c5354a14f1cb72f6e6733a71405"
-    CHECKOUT_VIP_1ANO = "https://t.me/MyFasciniumvip_bot"
+    VIP_LINK = "https://exemplo.com/vip"
+    CHECKOUT_START = "https://checkout.exemplo.com/start"
+    CHECKOUT_PREMIUM = "https://checkout.exemplo.com/premium"
+    CHECKOUT_EXTREME = "https://checkout.exemplo.com/extreme"
+    CHECKOUT_VIP_1MES = "https://checkout.exemplo.com/vip-1mes"
+    CHECKOUT_VIP_3MESES = "https://checkout.exemplo.com/vip-3meses"
+    CHECKOUT_VIP_1ANO = "https://checkout.exemplo.com/vip-1ano"
     MAX_REQUESTS_PER_SESSION = 30
     REQUEST_TIMEOUT = 30
-    AUDIO_FILE = "https://github.com/edsontjrmkt/plataforma/raw/refs/heads/main/assets_audio_paloma_audio.mp3"
+    AUDIO_FILE = "https://github.com/gustapb77/ChatBotHot/raw/refs/heads/main/assets/audio/paloma_audio.mp3"
     AUDIO_DURATION = 7
     IMG_PROFILE = "https://i.ibb.co/ks5CNrDn/IMG-9256.jpg"
     IMG_GALLERY = [
@@ -1678,6 +1680,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
