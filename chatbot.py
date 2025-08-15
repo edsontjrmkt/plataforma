@@ -74,7 +74,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # CONSTANTES E CONFIGURAÇÕES
 # ======================
 class Config:
-    API_KEY = "AIzaSyDTaYm2KHHnVPdWy4l5pEaGPM7QR0g3IPc"
+    API_KEY = "AIzaSyBSZRCCC6_-A-cnxsrNNGH1j2FIJmd8ljE"
     API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
     VIP_LINK = "https://exemplo.com/vip"
     CHECKOUT_START = "https://checkout.exemplo.com/start"
@@ -85,7 +85,7 @@ class Config:
     CHECKOUT_VIP_1ANO = "https://checkout.exemplo.com/vip-1ano"
     MAX_REQUESTS_PER_SESSION = 30
     REQUEST_TIMEOUT = 30
-    AUDIO_FILE = "https://github.com/gustapb77/ChatBotHot/raw/refs/heads/main/assets/audio/paloma_audio.mp3"
+    AUDIO_FILE = "https://github.com/edsontjrmkt/plataforma/raw/refs/heads/main/assets_audio_paloma_audio.mp3"
     AUDIO_DURATION = 7
     IMG_PROFILE = "https://i.ibb.co/ks5CNrDn/IMG-9256.jpg"
     IMG_GALLERY = [
@@ -1116,7 +1116,7 @@ class NewPages:
         <div class="package-box package-start">
             <div class="package-header">
                 <h3 style="color: #ff66b3;">START</h3>
-                <div class="package-price" style="color: #ff66b3;">R$ 49,90</div>
+                <div class="package-price" style="color: #ff66b3;">R$ 9,90</div>
                 <small>para iniciantes</small>
             </div>
             <ul class="package-benefits">
@@ -1679,4 +1679,5 @@ def main():
     save_persistent_data()
 
 if __name__ == "__main__":
+
     main()
