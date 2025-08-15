@@ -77,7 +77,7 @@ class Config:
     API_KEY = "AIzaSyDTaYm2KHHnVPdWy4l5pEaGPM7QR0g3IPc"
     API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
     VIP_LINK = "https://exemplo.com/vip"
-    CHECKOUT_START = "https://checkout.exemplo.com/start"
+    CHECKOUT_START = "https://pay.risepay.com.br/Pay/3cd8ce7e575e4f57ad428b5b5a61be93"
     CHECKOUT_PREMIUM = "https://checkout.exemplo.com/premium"
     CHECKOUT_EXTREME = "https://checkout.exemplo.com/extreme"
     CHECKOUT_VIP_1MES = "https://checkout.exemplo.com/vip-1mes"
@@ -1680,3 +1680,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
