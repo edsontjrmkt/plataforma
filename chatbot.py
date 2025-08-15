@@ -87,11 +87,11 @@ class Config:
     REQUEST_TIMEOUT = 30
     AUDIO_FILE = "https://github.com/edsontjrmkt/plataforma/raw/refs/heads/main/assets/assets_audio_paloma_audio.mp3"
     AUDIO_DURATION = 7
-    IMG_PROFILE = "https://i.ibb.co/ks5CNrDn/IMG-9256.jpg"
+    IMG_PROFILE = "https://i.ibb.co/1GV4h9cq/FOTO-3.png"
     IMG_GALLERY = [
-        "https://i.ibb.co/C5dGymT6/calcinha.png",
-        "https://i.ibb.co/Y4B7CbXf/IMG-9202.jpg",
-        "https://i.ibb.co/Fqf0gPPq/IMG-9199.jpg"
+        "https://i.ibb.co/GfsMwwMn/8.jpg",
+        "https://i.ibb.co/rKcH5wbs/12.png",
+        "https://i.ibb.co/kRvrpxw/11.png"
     ]
     IMG_HOME_PREVIEWS = [
         "https://i.ibb.co/GfsMwwMn/8.jpg",
@@ -1681,6 +1681,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
