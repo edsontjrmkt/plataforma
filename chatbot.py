@@ -18,7 +18,7 @@ from functools import lru_cache
 # CONFIGURAÇÃO INICIAL DO STREAMLIT
 # ======================
 st.set_page_config(
-    page_title="My Fascinium  Premium",
+    page_title="Paloma Premium",
     page_icon="💋",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -74,10 +74,10 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # CONSTANTES E CONFIGURAÇÕES
 # ======================
 class Config:
-    API_KEY = "AIzaSyBSZRCCC6_-A-cnxsrNNGH1j2FIJmd8ljE"
+    API_KEY = "AIzaSyDTaYm2KHHnVPdWy4l5pEaGPM7QR0g3IPc"
     API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
     VIP_LINK = "https://exemplo.com/vip"
-    CHECKOUT_START = "https://pay.risepay.com.br/Pay/3cd8ce7e575e4f57ad428b5b5a61be93"
+    CHECKOUT_START = "https://checkout.exemplo.com/start"
     CHECKOUT_PREMIUM = "https://checkout.exemplo.com/premium"
     CHECKOUT_EXTREME = "https://checkout.exemplo.com/extreme"
     CHECKOUT_VIP_1MES = "https://checkout.exemplo.com/vip-1mes"
@@ -85,18 +85,18 @@ class Config:
     CHECKOUT_VIP_1ANO = "https://checkout.exemplo.com/vip-1ano"
     MAX_REQUESTS_PER_SESSION = 30
     REQUEST_TIMEOUT = 30
-    AUDIO_FILE = "https://github.com/edsontjrmkt/plataforma/raw/refs/heads/main/assets/assets_audio_My Fascinium_audio.mp3"
+    AUDIO_FILE = "https://github.com/gustapb77/ChatBotHot/raw/refs/heads/main/assets/audio/paloma_audio.mp3"
     AUDIO_DURATION = 7
-    IMG_PROFILE = "https://i.ibb.co/1GV4h9cq/FOTO-3.png"
+    IMG_PROFILE = "https://i.ibb.co/ks5CNrDn/IMG-9256.jpg"
     IMG_GALLERY = [
-        "https://i.ibb.co/GfsMwwMn/8.jpg",
-        "https://i.ibb.co/rKcH5wbs/12.png",
-        "https://i.ibb.co/kRvrpxw/11.png"
+        "https://i.ibb.co/zhNZL4FF/IMG-9198.jpg",
+        "https://i.ibb.co/Y4B7CbXf/IMG-9202.jpg",
+        "https://i.ibb.co/Fqf0gPPq/IMG-9199.jpg"
     ]
     IMG_HOME_PREVIEWS = [
-        "https://i.ibb.co/GfsMwwMn/8.jpg",
-        "https://i.ibb.co/rKcH5wbs/12.png",
-        "https://i.ibb.co/kRvrpxw/11.png"
+        "https://i.ibb.co/k2MJg4XC/Save-ClipApp-412457343-378531441368078-7870326395110089440-n.jpg",
+        "https://i.ibb.co/MxqKBk1X/Save-ClipApp-481825770-18486618637042608-2702272791254832108-n.jpg",
+        "https://i.ibb.co/F4CkkYTL/Save-ClipApp-461241348-1219420546053727-2357827070610318448-n.jpg"
     ]
     LOGO_URL = "https://i.ibb.co/LX7x3tcB/Logo-Golden-Pepper-Letreiro-1.png"
 
@@ -180,8 +180,8 @@ def save_persistent_data():
 # MODELOS DE DADOS
 # ======================
 class Persona:
-    MY FASCINIUM = """
-    [PERFIL MY FASCINIUM]
+    PALOMA = """
+    [PERFIL PALOMA]
     - Mulher vulgar e safada que adora provocar
     - Linguagem direta e cheia de malícia
     - Frases curtas e sem pontuação perfeita
@@ -196,7 +196,7 @@ class Persona:
     1. Quando o histórico mostra clima sexual:
     Histórico:
     Cliente: sua buceta é rosinha?
-    My Fascinium: adoro mostrar ela aberta
+    Paloma: adoro mostrar ela aberta
     Cliente: quero ver
     Resposta: ```json
     {
@@ -226,7 +226,7 @@ class Persona:
     3. Quando o contexto não justifica CTA:
     Histórico:
     Cliente: oi
-    My Fascinium: oi gato
+    Paloma: oi gato
     Resposta: ```json
     {
       "text": "eai gostoso",
@@ -394,7 +394,7 @@ class ApiService:
             "contents": [
                 {
                     "role": "user",
-                    "parts": [{"text": f"{Persona.MY FASCINIUM}\n\nHistórico da Conversa:\n{conversation_history}\n\nÚltima mensagem do cliente: '{prompt}'\n\nResponda em JSON com o formato:\n{{\n  \"text\": \"sua resposta\",\n  \"cta\": {{\n    \"show\": true/false,\n    \"label\": \"texto do botão\",\n    \"target\": \"página\"\n  }}\n}}"}]
+                    "parts": [{"text": f"{Persona.PALOMA}\n\nHistórico da Conversa:\n{conversation_history}\n\nÚltima mensagem do cliente: '{prompt}'\n\nResponda em JSON com o formato:\n{{\n  \"text\": \"sua resposta\",\n  \"cta\": {{\n    \"show\": true/false,\n    \"label\": \"texto do botão\",\n    \"target\": \"página\"\n  }}\n}}"}]
                 }
             ],
             "generationConfig": {
@@ -469,7 +469,7 @@ class UiService:
             animation: pulse-ring 2s infinite;
         ">
             <div style="font-size: 3rem;">📱</div>
-            <h3 style="color: #ff66b3; margin-bottom: 5px;">Ligando para My Fascinium...</h3>
+            <h3 style="color: #ff66b3; margin-bottom: 5px;">Ligando para Paloma...</h3>
             <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 15px;">
                 <div style="width: 10px; height: 10px; background: #4CAF50; border-radius: 50%;"></div>
                 <span style="font-size: 0.9rem;">Online agora</span>
@@ -499,7 +499,7 @@ class UiService:
         ">
             <div style="font-size: 3rem; color: #4CAF50;">✓</div>
             <h3 style="color: #4CAF50; margin-bottom: 5px;">Chamada atendida!</h3>
-            <p style="font-size: 0.9rem; margin:0;">My Fascinium está te esperando...</p>
+            <p style="font-size: 0.9rem; margin:0;">Paloma está te esperando...</p>
         </div>
         """, unsafe_allow_html=True)
         
@@ -707,8 +707,8 @@ class UiService:
             
             st.markdown("""
             <div class="sidebar-header">
-                <img src="{profile_img}" alt="My Fascinium">
-                <h3 style="color: #ff66b3; margin-top: 10px;">My Fascinium Premium</h3>
+                <img src="{profile_img}" alt="Paloma">
+                <h3 style="color: #ff66b3; margin-top: 10px;">Paloma Premium</h3>
             </div>
             """.format(profile_img=Config.IMG_PROFILE), unsafe_allow_html=True)
             
@@ -762,7 +762,7 @@ class UiService:
             st.markdown("---")
             st.markdown("""
             <div style="text-align: center; font-size: 0.7em; color: #888;">
-                <p>© 2024 My Fascinium Premium</p>
+                <p>© 2024 Paloma Premium</p>
                 <p>Conteúdo para maiores de 18 anos</p>
             </div>
             """, unsafe_allow_html=True)
@@ -903,7 +903,7 @@ class UiService:
         
         st.markdown(f"""
         <div class="chat-header">
-            <h2 style="margin:0; font-size:1.5em; display:inline-block;">Chat Privado com My Fascinium</h2>
+            <h2 style="margin:0; font-size:1.5em; display:inline-block;">Chat Privado com Paloma</h2>
         </div>
         """, unsafe_allow_html=True)
         
@@ -967,7 +967,7 @@ class NewPages:
 
         st.markdown("""
         <div class="hero-banner">
-            <h1 style="color: #ff66b3;">My Fascinium Premium</h1>
+            <h1 style="color: #ff66b3;">Paloma Premium</h1>
             <p>Conteúdo exclusivo que você não encontra em nenhum outro lugar...</p>
             <div style="margin-top: 20px;">
                 <a href="#vip" style="
@@ -1363,7 +1363,7 @@ class ChatService:
         formatted = []
         
         for msg in messages[-max_messages:]:
-            role = "Cliente" if msg["role"] == "user" else "My Fascinium"
+            role = "Cliente" if msg["role"] == "user" else "Paloma"
             content = msg["content"]
             if content == "[ÁUDIO]":
                 content = "[Enviou um áudio sensual]"
@@ -1642,7 +1642,7 @@ def main():
             st.markdown("""
             <div style="text-align: center; margin: 50px 0;">
                 <img src="{profile_img}" width="120" style="border-radius: 50%; border: 3px solid #ff66b3;">
-                <h2 style="color: #ff66b3; margin-top: 15px;">My Fascinium</h2>
+                <h2 style="color: #ff66b3; margin-top: 15px;">Paloma</h2>
                 <p style="font-size: 1.1em;">Estou pronta para você, amor...</p>
             </div>
             """.format(profile_img=Config.IMG_PROFILE), unsafe_allow_html=True)
@@ -1679,12 +1679,4 @@ def main():
     save_persistent_data()
 
 if __name__ == "__main__":
-
     main()
-
-
-
-
-
-
-
